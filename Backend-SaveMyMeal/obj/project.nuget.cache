@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "09NfYz6I6BI=",
+  "success": true,
+  "projectFilePath": "/Users/mac1/RiderProjects/SaveMyMeal/Backend-SaveMyMeal/Backend-SaveMyMeal.csproj",
+  "expectedPackageFiles": [
+    "/Users/mac1/.nuget/packages/microsoft.aspnetcore.openapi/10.0.12/microsoft.aspnetcore.openapi.10.0.12.nupkg.sha512",
+    "/Users/mac1/.nuget/packages/microsoft.openapi/2.12.0/microsoft.openapi.2.12.0.nupkg.sha512"
+  ],
+  "logs": []
+}

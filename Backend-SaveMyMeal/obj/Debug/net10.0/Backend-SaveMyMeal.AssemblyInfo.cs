@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Backend-SaveMyMeal")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2e96ca0c0b30ca19fc1200f2337d3ca422e7c91f")]
 [assembly: System.Reflection.AssemblyProductAttribute("Backend-SaveMyMeal")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Backend-SaveMyMeal")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -31,3 +31,4 @@
 /Users/mac1/RiderProjects/SaveMyMeal/Backend-SaveMyMeal/obj/Debug/net10.0/Backend-SaveMyMeal.pdb
 /Users/mac1/RiderProjects/SaveMyMeal/Backend-SaveMyMeal/obj/Debug/net10.0/Backend-SaveMyMeal.genruntimeconfig.cache
 /Users/mac1/RiderProjects/SaveMyMeal/Backend-SaveMyMeal/obj/Debug/net10.0/ref/Backend-SaveMyMeal.dll
+/Users/mac1/RiderProjects/SaveMyMeal/Backend-SaveMyMeal/obj/Debug/net10.0/Backend-SaveMyMeal.sourcelink.json

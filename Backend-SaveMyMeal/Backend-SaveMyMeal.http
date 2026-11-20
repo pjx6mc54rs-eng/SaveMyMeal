@@ -1,6 +1,70 @@
-@Backend_SaveMyMeal_HostAddress = http://local  host:5106
+@SaveMyMeal_Host = http://localhost:5106
 
-GET {{Backend_SaveMyMeal_HostAddress}}/weatherforecast/
+### 1. Test Root / Health
+GET {{SaveMyMeal_Host}}/
 Accept: application/json
 
-###
+### 2. Inscription Utilisateur (Client)
+POST {{SaveMyMeal_Host}}/api/auth/register
+Content-Type: application/json
+
+{
+  "username": "jean_dupont",
+  "email": "jean.dupont@example.com",
+  "password": "Password123!",
+  "role": "Client"
+}
+
+### 3. Connexion
+POST {{SaveMyMeal_Host}}/api/auth/login
+Content-Type: application/json
+
+{
+  "emailOrUsername": "jean.dupont@example.com",
+  "password": "Password123!"
+}
+
+### 4. Liste de tous les restaurants
+GET {{SaveMyMeal_Host}}/api/restaurants
+Accept: application/json
+
+### 5. Liste des plats disponibles
+GET {{SaveMyMeal_Host}}/api/meals?onlyAvailable=true
+Accept: application/json
+
+### 6. Offres intelligentes anti-gaspillage (Smart Discounts)
+GET {{SaveMyMeal_Host}}/api/offers
+Accept: application/json
+
+### 7. Vérification prix intelligent pour un plat
+GET {{SaveMyMeal_Host}}/api/offers/1/smart-price
+Accept: application/json
+
+### 8. Création d'une commande
+POST {{SaveMyMeal_Host}}/api/orders
+Content-Type: application/json
+
+{
+  "clientId": 1,
+  "restaurantId": 1,
+  "items": [
+    {
+      "mealId": 1,
+      "quantity": 1
+    }
+  ],
+  "pointsToRedeem": 0
+}
+
+### 9. Validation du QR Code lors du retrait en restaurant
+POST {{SaveMyMeal_Host}}/api/qrcodes/validate
+Content-Type: application/json
+
+{
+  "codeValue": "SMM-ORD-000001-A1B2C3",
+  "restaurantId": 1
+}
+
+### 10. Consulter les points de fidélité
+GET {{SaveMyMeal_Host}}/api/loyalty/1
+Accept: application/json
